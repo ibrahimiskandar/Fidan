@@ -66,6 +66,7 @@ namespace LimakAz.Controllers
 
             member.Balance = member.Balance - orderVM.Price;
             member.WaitedBonus += Math.Ceiling((orderVM.Price * 20) / 100);
+            string uniqueid = Guid.NewGuid().ToString();
 
 
             Order order = new Order
@@ -74,6 +75,7 @@ namespace LimakAz.Controllers
                 AppUserId = member.Id,
                 CreatedAt = DateTime.UtcNow,
                 Url = orderVM.Url,
+                No = uniqueid,
                 Count = orderVM.Count,
                 Price = orderVM.Price,
                 ShopName = orderVM.ShopName,
@@ -85,7 +87,7 @@ namespace LimakAz.Controllers
             _context.Orders.Add(order);
             _context.SaveChanges();
 
-            return RedirectToAction("index", "userpanel");
+            return RedirectToAction("index", "userpanel",order);
         }
     }
 }

@@ -22,15 +22,15 @@ namespace LimakAz.Services
             {
                 // create message
                 var email = new MimeMessage();
-                email.From.Add(MailboxAddress.Parse("limakcodeacademy@yandex.com"));
+                email.From.Add(MailboxAddress.Parse("limakkargoaz@gmail.com"));
                 email.To.Add(MailboxAddress.Parse(to));
                 email.Subject = subject;
                 email.Body = new TextPart(TextFormat.Html) { Text = html };
 
                 // send email
                 using var smtp = new SmtpClient();
-                smtp.Connect("smtp.yandex.com", 587, SecureSocketOptions.StartTls);
-                smtp.Authenticate("limakcodeacademy@yandex.com", "limakcodeacademy2022");
+                smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+                smtp.Authenticate("limakkargoaz@gmail.com", "thjlmesvbvkozdwk");
                 smtp.Send(email);
                 smtp.Disconnect(true);
             }

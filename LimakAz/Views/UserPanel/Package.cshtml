@@ -1,4 +1,4 @@
-﻿@model List<Order>
+﻿@model IEnumerable<Order>
 
 @{
     ViewData["Title"] = "Package";
@@ -40,7 +40,7 @@
                             </li>
                         </ul>
                     </div>
-                    @if (Model.Count > 0)
+                    @if (Model.Count() > 0)
                     {
                         <div data-id="1" class="order-item order-item-package active active-tab">
                             <div class="card mb20">
@@ -98,7 +98,7 @@
                                                                         <td>
                                                                             <div class="detail-table-content">
                                                                                 <strong>İzləmə № </strong>
-                                                                                <span>667341@(index)</span>
+                                                                                <span>!@order.AppUserId</span>
                                                                             </div>
                                                                         </td>
                                                                         <td>
