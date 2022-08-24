@@ -27,7 +27,11 @@ namespace LimakAz.Controllers
 
         public IActionResult Register()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+                return View();
         }
 
 
@@ -83,6 +87,10 @@ namespace LimakAz.Controllers
 
         public IActionResult Login()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 

@@ -1264,7 +1264,6 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
-C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Order\OrderItem.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Privacy\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutUser.cshtml.g.cs

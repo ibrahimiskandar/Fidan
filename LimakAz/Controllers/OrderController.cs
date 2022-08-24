@@ -33,7 +33,7 @@ namespace LimakAz.Controllers
             OrderViewModel orderVM = new OrderViewModel();
             ViewBag.Balance = member.Balance;
 
-            return View(orderVM);
+            return View("Index",orderVM);
         }
 
 
