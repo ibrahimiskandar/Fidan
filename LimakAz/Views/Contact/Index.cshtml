@@ -1,0 +1,93 @@
+﻿@model ContactViewModel
+<div class="main-container">
+    <!-- Contact Start -->
+    <section class="contact">
+        <div class="block">
+            <div class="block-header">
+                <h2 class="block-title">Əlaqə</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a asp-action="index" asp-controller="home">Ana səhifə</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>Əlaqə</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="block-body">
+                @foreach (var contact in Model.Contacts)
+                {
+                    <div class="card card-contact mb-20">
+                        <div class="card-contact-wrapper">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-article">
+                                        <div class="contact-title">
+                                            <img src="~/assets/images/location.svg" alt="location">
+                                            <h3>@contact.CityName</h3>
+                                        </div>
+                                        <p class="contact-text">
+                                            @contact.Address
+                                        </p>
+                                        <div class="contact-title map-title" >
+                                            <img src="~/assets/images/map.svg" alt="map">
+                                            <h3 style="text-decoration:underline; cursor:pointer">Xəritəyə bax</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-article">
+                                        <div class="contact-title">
+                                            <img src="~/assets/images/warehouse.svg" alt="warehouse">
+                                            <h3>Anbar</h3>
+                                        </div>
+                                        <p class="contact-text">
+                                            <strong> @contact.WeekDays</strong>
+                                            <br>
+                                            Saat
+                                            <strong>@contact.Hours</strong>
+
+                                        </p>
+                                    </div>
+                                    <div class="contact-article">
+                                        <div class="contact-title">
+                                            <img src="~/assets/images/bag.svg" alt="bag">
+                                            <h3>Sifariş et xidməti</h3>
+                                        </div>
+                                        <p class="contact-text">24 saat</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-title contact-title-call">
+                                        <img src="~/assets/images/phone.svg" alt="phone">
+                                        <h3 style="font-size: 18px; line-height: 22px;">*9595</h3>
+                                    </div>
+                                    <div class="contact-title contact-title-mail">
+                                        <img src="~/assets/images/mail.svg" alt="mail">
+                                        <h3>@contact.InfoMail</h3>
+                                    </div>
+                                    <div class="contact-article">
+                                        <div class="contact-title">
+                                            <img src="~/assets/images/callcenter.svg" alt="callcenter">
+                                            <h3>Müştəri xidməti</h3>
+                                        </div>
+                                        <p class="contact-text">24 Saat</p>
+                                    </div>
+                                </div>
+                                <div id="contact-map" class="col-12 contact-map">
+                                    <div class="address-map">
+                                        @Html.Raw(contact.Location)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 }
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+</div>
+<script src="~/assets/js/contact.js"></script>
+
+

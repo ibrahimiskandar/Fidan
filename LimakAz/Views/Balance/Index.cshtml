@@ -1,0 +1,94 @@
+﻿@model BalanceViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<!-- Content -->
+<div class="col-sm-12 col-md-8 col-lg-9">
+    <div>
+        <div class="content">
+            <div class="balance-orange">
+                <div class="card order-item order-item-balance">
+                    <div class="card-body" style="padding: 2rem !important;">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="balance-card">
+                                    <div class="balance-card-header">
+                                        <div class="balance-card-total">
+                                            <h3 class="balance-card-title">Balansım</h3>
+                                            <div class="balance-card-total-price">
+                                                <span>
+                                                    @Model.Member.Balance <sup class="manat">₼</sup>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="balance-card-date">
+                                            <p>Son əlavə tarixi</p>
+                                            <strong>2022-10-07</strong>
+                                        </div>
+                                    </div>
+                                    <div class="balance-card-body">
+                                        <p class="balance-card-text">
+                                            Azərbaycana çatdırılma haqqının
+                                            ödənilməsi və online kuryer sifarişi üçün balansınızı
+                                            artıra
+                                            bilərsiniz.
+                                        </p>
+                                        <h4 class="balance-card-note upper">
+                                            ARTIRILAN BALANS GERİ
+                                            QAYTARILMIR.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card order-item order-item-payment">
+                <div class="card-body">
+                    <h3 class="balance-payment-title">
+                        Ödəniş üçün balans artımı
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="balance-payment-form">
+                                <form asp-action="IncreaseBalance" asp-controller="balance">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input autocomplete="off" asp-for="@Model.Money"
+                                                   placeholder="AZN"
+                                                   class="form-control"
+                                                   style="background-color: white; box-shadow:none;outline:none" onFocus="value=''">
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                            class="btn btn-submit btn-block btn-primary">
+                                        Balansı artır
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="balance-payment">
+                                <div class="balance-payment-card">
+                                    <img src="assets/images/visa-2.svg" alt="">
+                                    <img src="assets/images/mastercard-2.svg" alt="">
+                                </div>
+                                <p class="balance-payment-text">
+                                    Min:
+                                    <strong>1 USD</strong>
+                                    - Max:
+                                    <strong>50 USD</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

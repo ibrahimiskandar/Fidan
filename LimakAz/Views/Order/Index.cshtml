@@ -1,0 +1,61 @@
+﻿@model OrderViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<section id="hero" style="width:auto;display:block;padding:0" class="col-md-7">
+    <div class="container-hero">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div class="card order-card" style="width: 820px; height: 53.3rem;">
+                    <div class="order-card-content" style="width:100%">
+                        <form asp-action="OrderItem" asp-controller="order" method="post">
+                            <div class="order-input">
+                                <div class="input-group">
+                                    <input type="url" autocomplete="off" asp-for="Url" class="form-control"
+                                           placeholder="Məhsul linkini əlavə edin" style="background-color: white; border-color: #efefef">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text" style="border-color: #efefef">
+                                            <img src="~/assets/images/link.svg" alt="link">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%;margin-bottom:1rem">
+                                <span class="text-danger" style="font-size:13px" asp-validation-for="Url"></span>
+                            </div>
+                            <div class="order-input d-block">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input class="form-control" asp-for="ShopName" placeholder="Mağaza adı" style="border: 0.1rem solid #efefef; border-radius: 0.5rem; background-color: white" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input class="form-control" asp-for="Count" onFocus="value=''" placeholder="Sayı" style="border: 0.1rem solid #efefef; border-radius: 0.5rem; background-color: white" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input class="form-control" asp-for="Price" type="number" onFocus="value=''" placeholder="Məbləğ" style="border: 0.1rem solid #efefef; border-radius: 0.5rem; background-color: white" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%;margin-bottom:1rem">
+                                <span class="text-danger" style="font-size:13px" asp-validation-for="Price"></span>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-order">Sifariş et</button>
+                        </form>
+                        <div style=" height: 87px; display: flex; justify-content: flex-end; align-items: center; ">
+                            <h2 style=" color: #05580c; font-size: 19px; ">Balans: @ViewBag.Balance ₼</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

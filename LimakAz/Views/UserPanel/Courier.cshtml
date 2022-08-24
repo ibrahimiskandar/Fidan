@@ -1,0 +1,210 @@
+﻿
+@{
+    ViewData["Title"] = "Courier";
+}
+
+@model CourierViewModel
+
+@{
+    ViewData["Title"] = "Address";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div>
+                    <div class="content">
+                        <div class="row">
+                            <div>
+                                <ul id="headerList" class="nav nav nav-tabs card-tabs-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link active" data-target="1">
+                                            <span class="card-tabs-nav-title">
+                                                Yeni kuryer
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item card-tabs">
+                                        <a href="#" class="nav-link" data-target="2">
+                                            <span class="card-tabs-nav-title">Kuryer izlə</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content card-tabs-body">
+                            <div class="tab-pane active active-tab" data-id="1">
+                                <div class="card order-item order-item-safety">
+                                    <div class="card-body">
+                                        <div class="card-step">
+                                            <h3 class="step-title upper">Anbar Seçin</h3>
+                                            <fieldset class="form-group" style="border: 0;">
+                                                <div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input" id="1">
+                                                        <label class="custom-control-label ccl" for="1">
+                                                            Bakı - İçərişəhər
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input" id="2">
+                                                        <label class="custom-control-label ccl" for="2">
+                                                            Bakı - Xalqlar Dostluğu
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input" id="3">
+                                                        <label class="custom-control-label ccl" for="3">
+                                                            Sumqayıt
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input" id="4">
+                                                        <label class="custom-control-label ccl" for="4">
+                                                            Gəncə
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input " id="5">
+                                                        <label class="custom-control-label ccl" for="5">
+                                                            Zaqatala
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom custom-control custom-radio">
+                                                        <input type="radio" name="depo-radios" value="1"
+                                                               class="custom-control-input " id="5">
+                                                        <label class="custom-control-label ccl" for="5">
+                                                            Balakən
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="card-step">
+                                            <h3 class="step-title upper">ƏRAZİ SEÇİN</h3>
+                                            <fieldset class="form-group" style="border: 0;">
+                                                <div>
+                                                    <div class="check-custom check-custom-block custom-control custom-radio-2">
+                                                        <input type="radio" name="loc-radios" value="1"
+                                                               class="custom-control-input-2" id="loc1">
+                                                        <label class="custom-control-label ccl-2" for="loc1">
+                                                            Səbail, Yasamal, Nəsimi, Binəqədi, Nərimanov - 3 AZN
+                                                            <strong>3 AZN</strong>
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom check-custom-block custom-control custom-radio">
+                                                        <input type="radio" name="loc-radios" value="1"
+                                                               class="custom-control-input-2" id="loc2">
+                                                        <label class="custom-control-label ccl-2" for="loc2">
+                                                            Xətai, Nizami, Sabunçu, Suraxanı - 4 AZN
+                                                            <strong>4 AZN</strong>
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom check-custom-block custom-control custom-radio">
+                                                        <input type="radio" name="loc-radios" value="1"
+                                                               class="custom-control-input-2" id="loc3">
+                                                        <label class="custom-control-label ccl-2" for="loc3">
+                                                            Xırdalan,Masazır,Lökbatan - 5 AZN
+                                                            <strong>5 AZN</strong>
+                                                        </label>
+                                                    </div>
+                                                    <div class="check-custom check-custom-block custom-control custom-radio">
+                                                        <input type="radio" name="loc-radios" value="1"
+                                                               class="custom-control-input-2 " id="loc4">
+                                                        <label class="custom-control-label ccl-2" for="loc4">
+                                                            Bakı ətrafı kənd və qəsəbələr - 5 AZN
+                                                            <strong>5 AZN</strong>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <button type="button" disabled="disabled"
+                                                class="btn btn-submit btn-primary disabled">
+                                            <span>
+                                                Yadda saxla
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active-tab" data-id="2">
+                                <div class="card order-item order-item-courier">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table b-table order-table responsive_table">
+                                                <thead role="rowgroup">
+                                                    <tr role="row" class="">
+                                                        <th role="columnheader" scope="col" aria-colindex="1"
+                                                            class="">
+                                                            <div>№</div>
+                                                        </th>
+                                                        <th role="columnheader" scope="col" aria-colindex="2"
+                                                            class="">
+                                                            <div>Kuryer</div>
+                                                        </th>
+                                                        <th role="columnheader" scope="col" aria-colindex="3"
+                                                            class="">
+                                                            <div>Qiymət</div>
+                                                        </th>
+                                                        <th role="columnheader" scope="col" aria-colindex="4"
+                                                            class="">
+                                                            <div>Status</div>
+                                                        </th>
+                                                        <th role="columnheader" scope="col" aria-colindex="5"
+                                                            class="">
+                                                            <div>Əməliyyat</div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="rowgroup">
+                                                    <tr role="row" class="">
+                                                        <td aria-colindex="1" class="">
+                                                            <p>
+                                                                57419
+                                                            </p>
+                                                        </td>
+                                                        <td aria-colindex="2" class="">
+                                                            <p class="order-item-courier-location"
+                                                               style="overflow: hidden;">
+                                                                Bakı 2ci zona,
+                                                                Suraxanı, Qaraçuxur
+                                                            </p>
+                                                        </td>
+                                                        <td aria-colindex="3" class="">
+                                                            <span>3.00 AZN</span>
+                                                        </td>
+                                                        <td aria-colindex="4" class="">
+                                                            <span data-v-4faa5138="" class="upper text-success"
+                                                                  style="cursor: initial; font-weight: bold;">
+                                                                <span style="color: red;">
+                                                                    Təhvil verildi
+                                                                </span>
+                                                            </span>
+                                                        </td>
+                                                        <td aria-colindex="5" class="">
+                                                            <div class="courier-btns">
+                                                                <button type="button"
+                                                                        class="btn btn-action btn-orange btn-secondary">
+                                                                    Bax
+                                                                </button>
+                                                                <button type="button"
+                                                                        class="btn btn-action btn-green btn-secondary">
+                                                                    Ödənilib
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

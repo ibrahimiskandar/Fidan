@@ -1,0 +1,307 @@
+﻿@model HomeViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <section id="hero">
+        <div class="container-hero">
+            <div class="row">
+                <div class="col-md-12 col-xl-12  col-12">
+                    <div class="card order-card">
+                        <div class="order-card-content">
+                            <form action="">
+                                <div class="order-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"
+                                               placeholder="Məhsul linkini əlavə edin">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <img src="~/assets/images/link.svg" alt="link">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @if (!User.Identity.IsAuthenticated)
+                                    {
+                                        <a asp-action="login" asp-controller="account" style="line-height: 40px;" class="btn btn-success btn-order">Sifariş et</a>
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="btn btn-success btn-order">Sifariş et</button>
+                                    }
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+}
+<div class="main-container">
+    <div class="home">
+        <!-- Shops -->
+        <div class="block">
+            <div class="block-header">
+                <h2 class="block-title">Mağazalar</h2>
+            </div>
+            <div class="block-body">
+                <div class="store-list">
+                    <div class="row">
+                        @foreach (var shopItem in Model.ShopItems)
+                        {
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+                                <a href="@shopItem.RedirectUrl" class="store-item">
+                                    <article class="card">
+                                        <img src="~/uploads/shopitems/@shopItem.Image" alt="shop-item">
+                                    </article>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="block-foot">
+                <a asp-action="index" asp-controller="shop" class="more">
+                    <span>Daha çox</span>
+                    <img src="~/assets/images/arrow-right-color.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="block">
+            <div class="block-header">
+                <h2 class="block-title">YENİLİKLƏR VƏ ELANLAR</h2>
+            </div>
+            <div class="block-body">
+                <div class="news-list">
+                    <div class="row">
+                        @foreach (var news in Model.News)
+                        {
+                            <div class="col-sm-6 col-md-4 col-12">
+                                <a href="#" class="news-card">
+                                    <article class="card">
+                                        <img src="~/uploads/news/@news.Image" alt="news" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">@news.Title</h4>
+                                            <p class="card-text news-card-date">
+                                                <img src="~/assets/images/calendar.svg" alt="calendar">
+                                                <span>@news.CreatedAt.ToString("yyyy-mm-dd")</span>
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="block-foot">
+                <a asp-action="index" asp-controller="shop" class="more">
+                    <span>Daha çox</span>
+                    <img src="~/assets/images/arrow-right-color.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Currency -->
+        <div class="block">
+            <div class="block-header">
+                <h2 class="block-title">ÖLKƏLƏR ÜZRƏ TARİFLƏR</h2>
+            </div>
+            <div class="block-body">
+                <div class="currency-div">
+                    <div class="currency-wrapper">
+                        <div class="currency-inner">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="left-side">
+                                        <div class="card tariff-card">
+                                            <div class="tariff-card-header">
+                                                <img src="~/assets/images/tr-circle.svg" alt="">
+                                                <h3>Türkiyə</h3>
+                                            </div>
+                                            <div class="tabs">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link active">
+                                                            Bakı - İçərişəhər
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Bakı - Xalqlar Dostluğu
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Xırdalan
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Sumqayıt
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Gəncə
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Zaqatala
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Balakən
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Mingəçevir
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="weight"><strong>0 kq - 0.1 kq</strong></div>
+                                                            <div class="price"><strong>1.00</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.1 кq - 0.25 кq</strong></div>
+                                                            <div class="price"><strong> 2.00 </strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.25 kq - 0.5 kq</strong></div>
+                                                            <div class="price"><strong>3.00</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.5 kq - 0.7 kq</strong></div>
+                                                            <div class="price"><strong>4.00</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.7 kq - 1 kq</strong></div>
+                                                            <div class="price"><strong>4.50</strong> $</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="left-side">
+                                        <div class="card tariff-card">
+                                            <div class="tariff-card-header">
+                                                <img src="~/assets/images/usa-circle.svg" alt="">
+                                                <h3>ABŞ</h3>
+                                            </div>
+                                            <div class="tabs">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link active">
+                                                            Bakı - İçərişəhər
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Bakı - Xalqlar Dostluğu
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Xırdalan
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Sumqayıt
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Gəncə
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Zaqatala
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Balakən
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link ">
+                                                            Mingəçevir
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="weight"><strong>0 kq - 0.1 kq</strong></div>
+                                                            <div class="price"><strong>2.00</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.1 кq - 0.25 кq</strong></div>
+                                                            <div class="price"><strong> 3.50 </strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.25 kq - 0.5 kq</strong></div>
+                                                            <div class="price"><strong>5.50</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.5 kq - 0.7 kq</strong></div>
+                                                            <div class="price"><strong>6.50</strong> $</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="weight"><strong>0.7 kq - 1 kq</strong></div>
+                                                            <div class="price"><strong>7.50</strong> $</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partners -->
+        <div class="block">
+            <div class="block-header">
+                <h2 class="block-title">SERTİFİKATLARIMIZ VƏ TƏRƏFDAŞLARIMIZ</h2>
+            </div>
+            <div class="block-body">
+                <div class="partner-list">
+                    <div class="row">
+                        @foreach (var certificate in Model.Certificates)
+                         {
+                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+                            <a href="@certificate.RedirectUrl" class="partner-item">
+                                <img src="~/uploads/certificates/@certificate.Image" alt="">
+                            </a>
+                         </div>
+                         }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
