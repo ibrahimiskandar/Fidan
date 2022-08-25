@@ -3,8 +3,11 @@
 @{
     ViewData["Title"] = "Login";
 }
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-    <div class="main-container">
+<div class="main-container">
     <div class="login-sec">
         <div class="block">
             <!-- Block Header -->
@@ -50,6 +53,7 @@
                                                                     <span aria-hidden="true"
                                                                           class="show-password hide-eye"></span>
                                                                 </a>
+
                                                             </div>
                                                             <fieldset class="form-group">
                                                                 <div>
@@ -64,7 +68,23 @@
                                                                                     xatırla
                                                                                 </label>
                                                                             </div>
-                                                                        </div>
+                                                                            <dnt-captcha asp-captcha-generator-max="30"
+                                                                                         asp-captcha-generator-min="1"
+                                                                                         asp-captcha-generator-language="English"
+                                                                                         asp-captcha-generator-display-mode="NumberToWord"
+                                                                                         asp-use-relative-urls="true"
+                                                                                         asp-placeholder="Security code as a number"
+                                                                                         asp-validation-error-message="Please enter the security code as a number."
+                                                                                         asp-font-name="Tahoma"
+                                                                                         asp-font-size="20"
+                                                                                         asp-fore-color="#333333"
+                                                                                         asp-back-color="#FCF6F5FF"
+                                                                                         asp-text-box-class="form-control"
+                                                                                         asp-text-box-template="<div class='input-group'><span class='input-group-text'><span class='bi-lock'></span></span>{0}</div>"
+                                                                                         asp-validation-message-class="text-danger"
+                                                                                         asp-refresh-button-class="bi-arrow-counterclockwise btn-lg"
+                                                                                         asp-show-refresh-button="true"
+                                                                                         asp-dir="ltr" />
                                                                         <div class="col-7">
                                                                             <div class="text-right">
                                                                                 <a href="#" class="form-link">
@@ -121,3 +141,10 @@
     </div>
 </div>
 <script src="~/assets/js/login.js"></script>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/jquery.unobtrusive-ajax.js"></script>

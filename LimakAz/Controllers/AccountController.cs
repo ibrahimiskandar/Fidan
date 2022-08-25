@@ -1,4 +1,5 @@
-﻿using LimakAz.Models;
+﻿using DNTCaptcha.Core;
+using LimakAz.Models;
 using LimakAz.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -16,13 +17,15 @@ namespace LimakAz.Controllers
         private readonly SignInManager<AppUser> _signInManager;
         private readonly AppDbContext _context;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IDNTCaptchaValidatorService _validatorService;
 
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, RoleManager<IdentityRole> roleManager, IDNTCaptchaValidatorService validatorService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _context = context;
             _roleManager = roleManager;
+            _validatorService = validatorService;
         }
 
         public IActionResult Register()
@@ -96,8 +99,21 @@ namespace LimakAz.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+
+        [ValidateDNTCaptcha(
+           ErrorMessage = "Please Enter Valid Captcha",
+           CaptchaGeneratorLanguage = Language.English,
+           CaptchaGeneratorDisplayMode = DisplayMode.ShowDigits)]   
         public async Task<IActionResult> Login(MemberLoginViewModel memberLoginVM)
         {
+            if (ModelState.IsValid)
+            {
+                //if (!_validatorService.HasRequestValidCaptchaEntry(Language.English, DisplayMode.ShowDigits))
+           //     {
+               //     this.ModelState.AddModelError( "Please Enter Valid Captcha.");
+              //      return View("Login");
+            //    }
+            }
             if (!ModelState.IsValid)
             {
                 return View();

@@ -41,7 +41,7 @@ using LimakAz.Models.Settings;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2a2ae8e73eb587decb20fdf3d40adff433edfe2f", @"/Views/UserPanel/Courier.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"10a6eeb31fee36ad6100b089d6d3f557358b4cc8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"193bdce69418faf7fc4d341454722a3f16e70f8a", @"/Views/_ViewImports.cshtml")]
     public class Views_UserPanel_Courier : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CourierViewModel>
     {
         #pragma warning disable 1998

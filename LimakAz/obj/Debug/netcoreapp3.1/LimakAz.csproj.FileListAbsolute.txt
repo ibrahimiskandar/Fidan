@@ -1284,3 +1284,14 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.pdb
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.genruntimeconfig.cache
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\CaptchaMvc.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\DNTCaptcha.Core.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.MvcApplicationPartsAssemblyInfo.cs
