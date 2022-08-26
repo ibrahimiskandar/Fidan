@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ibrahim\\Source\\Repos\\LimakFinal\\LimakAz\\LimakAz.csproj": {}
+    "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ibrahim\\Source\\Repos\\LimakFinal\\LimakAz\\LimakAz.csproj": {
+    "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ibrahim\\Source\\Repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
+        "projectUniqueName": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
         "projectName": "LimakAz",
-        "projectPath": "C:\\Users\\Ibrahim\\Source\\Repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
+        "projectPath": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ibrahim\\Source\\Repos\\LimakFinal\\LimakAz\\obj\\",
+        "outputPath": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ibrahim\\AppData\\Roaming\\NuGet\\NuGet.Config",
