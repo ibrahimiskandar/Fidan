@@ -11389,6 +11389,14 @@ fieldset:disabled .btn {
         display: none;
         visibility:hidden;
     }
+    .contact .block .block-body .card .card-contact-wrapper .row .contact-map {
+        display: none;
+        visibility: hidden;
+    }
+    .contact .block .block-body .card .card-contact-wrapper .row .address-map {
+        display: none;
+        visibility: hidden;
+    }
     .modal-fullscreen-xxl-down {
         width: 100vw;
         max-width: none;
@@ -13513,7 +13521,7 @@ main {
             margin-bottom: 1.6rem;
             text-decoration: underline;
         }
-          .contact .block .block-body .card .card-contact-wrapper .row .contact-title-map .contact-map .address-map{
+          .contact .block .block-body .card .card-contact-wrapper .row .contact-map .address-map{
          display:none;
         }
 
