@@ -13014,6 +13014,7 @@ main {
                                 background-color: transparent;
                                 border: 0;
                                 padding: 8px 14px;
+                                padding: 8px 14px;
                                 display: flex;
                                 align-items: center;
                                 font-size: 14px;
@@ -17170,6 +17171,7 @@ header #userPanel-nav {
 
             .register .block .block-body .card-auth .form-reg .row .row .pass .visiblity-btn .hide-eye {
                 background: url(../../assets/images/opened.svg) center no-repeat;
+                cursor:pointer;
             }
 
     .register .block .block-body .card-auth .form-reg .row .row .custom-select {
@@ -17332,6 +17334,7 @@ header #userPanel-nav {
 
                             .login-sec .modal-content .modal-body .modal-site .login .block .block-body .card-auth .row .card-auth-form .input-group .visiblity-btn-password .show-password.hide-eye {
                                 background: url(../../assets/images/opened.svg) center no-repeat;
+                                cursor:pointer;
                             }
 
                 .login-sec .modal-content .modal-body .modal-site .login .block .block-body .card-auth .row .card-auth-form .form-group {
