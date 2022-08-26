@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://limak.az/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
     <title>Limak.az</title>
 </head>
@@ -42,24 +43,17 @@
                         <li class="nav-list-item"><a asp-action="index" asp-controller="faq">Suallar</a></li>
                     </ul>
 
-                    <div id="side-bar" class="side-bar position-fixed">
-                        <ul class="small-nav">
-                            <li class="small-nav-item">
-                                <a asp-action="index" asp-controller="tariff">Tariflər</a>
-                            </li>
-                            <li class="small-nav-item">
-                                <a asp-action="index" asp-controller="shop">Mağazalar</a>
-                            </li>
-                            <li class="small-nav-item">
-                                <a asp-action="index" asp-controller="contact">Əlaqə</a>
-                            </li>
-                            <li class="small-nav-item">
-                                <a asp-action="index" asp-controller="about">Haqqımızda</a>
-                            </li>
-                            <li class="small-nav-item">
-                                <a asp-action="index" asp-controller="faq">Suallar</a>
-                            </li>
-                        </ul>
+                    <div class="topnav">
+                        <div id="myLinks">
+                            <a asp-action="index" asp-controller="tariff">Tariflər</a>
+                            <a asp-action="index" asp-controller="shop">Mağazalar</a>
+                            <a asp-action="index" asp-controller="contact">Əlaqə</a>
+                            <a asp-action="index" asp-controller="about">Haqqımızda</a>
+                            <a asp-action="index" asp-controller="faq">Suallar</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </div>
                     <div class="navbar-right-col col-md-6">
                         <a href="#" class="navbar-contact-phone">

@@ -1,5 +1,16 @@
 
 const accordion = document.getElementsByClassName("content-box");
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+
 
 function removeActivesInAccordion() {
     for (let i = 0; i < accordion.length; i++) {
