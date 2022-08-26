@@ -34,7 +34,8 @@
                             <img src="~/assets/images/logo.svg" alt="">
                         </a>
                     </div>
-                    <ul class="nav-list col-md-4">
+                 
+                    <ul class="nav-list col-xl-4 col-lg-4 col-md-4">
                         <li class="nav-list-item"><a asp-action="index" asp-controller="tariff">Tariflər</a></li>
                         <li class="nav-list-item"><a asp-action="index" asp-controller="shop">Mağazalar</a></li>
                         <li class="nav-list-item"><a asp-action="index" asp-controller="contact">Əlaqə</a></li>
@@ -101,11 +102,16 @@
                                     </div>
                                 </div>
                             </div>
-                         }
+                        }
                         else
                         {
                             <a asp-action="login" asp-controller="account" class="button">Daxil ol</a>
                         }
+                        <div class="hamburger">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,14 +129,14 @@
             <div class="footer-main row">
                 <div class="footer-left col-md-4">
                     <a asp-action="index" asp-controller="home" class="footer-logo">
-                        <img src="~/assets/images/logo-white.svg" alt="">
+                        <img src="~/assets/images/logo-white.svg" alt="logo-white">
                     </a>
                     <div class="footer-app">
                         <a href="#">
-                            <img src="~/assets/images/app-store.svg" alt="">
+                            <img src="~/assets/images/app-store.svg" alt="app-store">
                         </a>
                         <a href="#">
-                            <img src="~/assets/images/google-play.svg" alt="">
+                            <img src="~/assets/images/google-play.svg" alt="google-play">
                         </a>
                     </div>
                 </div>

@@ -11680,7 +11680,11 @@ header {
             border-bottom-left-radius: 50px;
             background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%);
         }
-
+@media (max-width:992px){
+    header .navbar .container-nav .navbar-wrapper .nav-list{
+        display:none;
+    }
+}
 footer {
     display: flex;
     align-items: center;
