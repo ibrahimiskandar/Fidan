@@ -34,58 +34,70 @@ namespace LimakAz.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-                return View();
+            return View();
         }
 
 
         [HttpPost]
+
+        [ValidateDNTCaptcha(
+
+        ErrorMessage = "Please Enter Valid Captcha",
+         CaptchaGeneratorLanguage = Language.English,
+          CaptchaGeneratorDisplayMode = DisplayMode.SumOfTwoNumbers)]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(MemberRegisterViewModel registerVM)
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
+
             AppUser member = await _userManager.FindByNameAsync(registerVM.UserName);
-
-            if (member != null)
+            if (ModelState.IsValid)
             {
-                ModelState.AddModelError("UserName", "İstifadəçi adı hal-hazırda sistemdə mövcuddur");
-                return View();
-            }
-
-            member = await _userManager.FindByEmailAsync(registerVM.Email);
-
-            if (member != null)
-            {
-                ModelState.AddModelError("Email", "Email hal-hazırda sistemdə mövcuddur");
-                return View();
-            }
-
-            member = new AppUser
-            {
-                FullName = registerVM.FullName,
-                UserName = registerVM.UserName,
-                Email = registerVM.Email,
-                PhoneNumber = registerVM.PhoneNumber,
-            };
-
-            var result = await _userManager.CreateAsync(member, registerVM.Password);
-
-            if (!result.Succeeded)
-            {
-                foreach (var err in result.Errors)
+                if (!_validatorService.HasRequestValidCaptchaEntry(Language.English, DisplayMode.SumOfTwoNumbers))
                 {
-                    ModelState.AddModelError("", err.Description);
+                    this.ModelState.AddModelError("DNTCaptchaInputText", "Please Enter Valid Captcha.");
+                    return View();
                 }
-                return View();
+                if (member != null)
+                {
+                    ModelState.AddModelError("UserName", "İstifadəçi adı hal-hazırda sistemdə mövcuddur");
+                    return View();
+                }
+
+                member = await _userManager.FindByEmailAsync(registerVM.Email);
+
+                if (member != null)
+                {
+                    ModelState.AddModelError("Email", "Email hal-hazırda sistemdə mövcuddur");
+                    return View();
+                }
+
+                member = new AppUser
+                {
+                    FullName = registerVM.FullName,
+                    UserName = registerVM.UserName,
+                    Email = registerVM.Email,
+                    PhoneNumber = registerVM.PhoneNumber,
+                };
+
+                var result = await _userManager.CreateAsync(member, registerVM.Password);
+
+                if (!result.Succeeded)
+                {
+                    foreach (var err in result.Errors)
+                    {
+                        ModelState.AddModelError("", err.Description);
+                    }
+                    return View();
+                }
+
+                //await _roleManager.CreateAsync(new IdentityRole("Member"));
+                await _userManager.AddToRoleAsync(member, "Member");
+                await _signInManager.SignInAsync(member, true);
+
+                return RedirectToAction("index", "userpanel");
             }
+            return View();
 
-            //await _roleManager.CreateAsync(new IdentityRole("Member"));
-            await _userManager.AddToRoleAsync(member, "Member");
-            await _signInManager.SignInAsync(member, true);
-
-            return RedirectToAction("index", "userpanel");
         }
 
         public IActionResult Login()
@@ -100,26 +112,15 @@ namespace LimakAz.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        [ValidateDNTCaptcha(
-           ErrorMessage = "Please Enter Valid Captcha",
-           CaptchaGeneratorLanguage = Language.English,
-           CaptchaGeneratorDisplayMode = DisplayMode.ShowDigits)]   
         public async Task<IActionResult> Login(MemberLoginViewModel memberLoginVM)
         {
-            if (ModelState.IsValid)
-            {
-                //if (!_validatorService.HasRequestValidCaptchaEntry(Language.English, DisplayMode.ShowDigits))
-           //     {
-               //     this.ModelState.AddModelError( "Please Enter Valid Captcha.");
-              //      return View("Login");
-            //    }
-            }
+
             if (!ModelState.IsValid)
             {
                 return View();
             }
             AppUser member = _userManager.Users.FirstOrDefault(x => x.NormalizedEmail == memberLoginVM.Email.ToUpper() && !x.IsAdmin);
-
+            
             if (member == null)
             {
                 ModelState.AddModelError("", "Email və ya şifrə yalnışdır");
@@ -163,9 +164,9 @@ namespace LimakAz.Controllers
         {
             AppUser member = await _userManager.FindByNameAsync(User.Identity.Name);
 
-            if (member == null) 
+            if (member == null)
             {
-             return RedirectToAction("index", "error");
+                return RedirectToAction("index", "error");
             }
 
             ViewBag.WareHouses = _context.WareHouses.ToList();

@@ -63,6 +63,9 @@ namespace LimakAz.Controllers
 
             return RedirectToAction("index", "balance");
         }
-
+        public ActionResult GetPartial()
+        {
+            return PartialView("_Payment");
+        }
     }
 }

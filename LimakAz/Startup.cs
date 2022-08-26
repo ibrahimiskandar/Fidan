@@ -64,11 +64,11 @@ namespace LimakAz
 
                 // Don't set this line (remove it) to use the installed system's fonts (FontName = "Tahoma").
                 // Or if you want to use a custom font, make sure that font is present in the wwwroot/fonts folder and also use a good and complete font!
-                .UseCustomFont(Path.Combine(_env.WebRootPath, "fonts", "IRANSans(FaNum)_Bold.ttf")) // This is optional.
+                .UseCustomFont(Path.Combine(_env.WebRootPath, "fonts", "captcha.ttf")) // This is optional.
                 .AbsoluteExpiration(minutes: 7)
                 .ShowThousandsSeparators(false)
                 .WithNoise(pixelsDensity: 25, linesCount: 3)
-                .WithEncryptionKey("This is my secure key!")
+                .WithEncryptionKey("1")
                 .InputNames(// This is optional. Change it if you don't like the default names.
                     new DNTCaptchaComponent
                     {
@@ -93,7 +93,7 @@ namespace LimakAz
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -102,6 +102,7 @@ namespace LimakAz
             app.UseAuthentication();
             app.UseAuthorization();
 
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -115,6 +116,7 @@ namespace LimakAz
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+           
         }
     }
 }

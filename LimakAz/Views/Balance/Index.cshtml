@@ -39,50 +39,24 @@
                                             ARTIRILAN BALANS GERİ
                                             QAYTARILMIR.
                                         </h4>
+
+                                        <a href="#" class="btn btn-success" onclick="GetPartial()">Balansi Artir </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card order-item order-item-payment">
-                <div class="card-body">
-                    <h3 class="balance-payment-title">
-                        Ödəniş üçün balans artımı
-                    </h3>
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="balance-payment-form">
-                                <form asp-action="IncreaseBalance" asp-controller="balance">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <input autocomplete="off" asp-for="@Model.Money"
-                                                   placeholder="AZN"
-                                                   class="form-control"
-                                                   style="background-color: white; box-shadow:none;outline:none" onFocus="value=''">
-                                        </div>
-                                    </div>
-                                    <button type="submit"
-                                            class="btn btn-submit btn-block btn-primary">
-                                        Balansı artır
-                                    </button>
-                                </form>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog" style="min-width:60%">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#" id="cancel" class="close" data-dismiss="modal">&times;</a>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="balance-payment">
-                                <div class="balance-payment-card">
-                                    <img src="assets/images/visa-2.svg" alt="">
-                                    <img src="assets/images/mastercard-2.svg" alt="">
-                                </div>
-                                <p class="balance-payment-text">
-                                    Min:
-                                    <strong>1 USD</strong>
-                                    - Max:
-                                    <strong>50 USD</strong>
-                                </p>
+                            <div class="modal-body" id="myModalBodyDiv">
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" id="cancel" class="btn btn-default" data-dismiss="modal">Cancel</a>
                             </div>
                         </div>
                     </div>
@@ -92,3 +66,29 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+    var GetPartial = function () {
+
+        var url = "/Balance/GetPartial";
+
+        $("#myModalBodyDiv").load(url, function () {
+            $("#myModal").modal("show");
+
+        })
+
+    }
+
+    $('a[id="cancel"]').click(function () {
+        $("#myModal").modal("hide");
+    });
+</script>
+
+@if (ViewBag.JavaScriptFunction != null)
+{
+    <script type="text/javascript">
+            @Html.Raw(ViewBag.JavaScriptFunction)
+    </script>
+}

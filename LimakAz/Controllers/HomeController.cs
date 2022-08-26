@@ -28,5 +28,12 @@ namespace LimakAz.Controllers
 
             return View(homeVM);
         }
+
+        public IActionResult PageNotFound()
+        {
+            
+            return View();
+        }
     }
+
 }

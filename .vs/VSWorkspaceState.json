@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\LimakAz",
+    "\\LimakAz\\Controllers",
     "\\LimakAz\\Views",
+    "\\LimakAz\\Views\\Account",
     "\\LimakAz\\Views\\Balance"
   ],
-  "SelectedNode": "\\LimakAz\\Program.cs",
+  "SelectedNode": "\\LimakAz\\Views\\_ViewImports.cshtml",
   "PreviewInSolutionExplorer": false
 }
