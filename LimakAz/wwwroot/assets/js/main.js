@@ -3,12 +3,12 @@
 let hamburger = document.getElementById('hamburger');
 
 hamburger.addEventListener("click",function() {
-    const navList = docuolment.getElementById("nav-list");
-    if (navList.style.display === "block") {
-        navList.style.display = "none";
+    const sideBar = document.getElementById("sideBar");
+    if (sideBar.style.display === "block") {
+        sideBar.style.display = "none";
     }
     else {
-        navList.style.display = "block";
+        sideBar.style.display = "block";
     }
 })
 
@@ -25,8 +25,28 @@ for (let i = 0; i < accordion.length; i++) {
         removeActivesInAccordion();
         accordion[i].classList.toggle("active");
     })
-
 }
+//function toggleMobileNavigation() {
+//    var sideBar = document.querySelector(".side-bar");
+//    var openBtn = document.querySelector(".navbar .navbar-toggler");
+//    var closeBtn = document.querySelector(".side-bar .close-btn");
+
+//    openBtn.on("click", function () {
+//        if (!sideBar.hasClass("show")) {
+//            sideBar.addClass("show");
+//        }
+//        return false;
+//    })
+
+//    closeBtn.on("click", function () {
+//        if (sideBar.hasClass("show")) {
+//            sideBar.removeClass("show");
+//        }
+//        return false;
+//    })
+//}
+
+//toggleMobileNavigation();
 
 // User Panel Button
 

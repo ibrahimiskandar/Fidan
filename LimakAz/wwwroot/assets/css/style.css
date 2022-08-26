@@ -11387,16 +11387,19 @@ fieldset:disabled .btn {
 @media (max-width: 1399.98px) {
     .contact .block .block-body .card .card-contact-wrapper .row .contact-article .map-title {
         display: none;
-        visibility:hidden;
+        visibility: hidden;
     }
+
     .contact .block .block-body .card .card-contact-wrapper .row .contact-map {
         display: none;
         visibility: hidden;
     }
+
     .contact .block .block-body .card .card-contact-wrapper .row .address-map {
         display: none;
         visibility: hidden;
     }
+
     .modal-fullscreen-xxl-down {
         width: 100vw;
         max-width: none;
@@ -11500,25 +11503,69 @@ header {
                         font-size: 1.5rem;
                         font-weight: 600;
                         margin: 0 0.2rem 0 1.2rem;
-                        letter-spacing:0.02em;
+                        letter-spacing: 0.02em;
                     }
 
                         header .navbar .container-nav .navbar-wrapper .nav-list .nav-list-item a:hover {
                             text-decoration: underline;
                         }
 
+.navbar .side-bar {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 278px;
+    height: 100vh;
+    border: 1px solid lightgray;
+    right: -300px;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+    .navbar .side-bar .close-btn {
+        left: -20px;
+        top: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .navbar .side-bar .small-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+    }
+
+        .navbar .side-bar .small-nav .small-nav-item {
+            padding: 10px 20px;
+            border-bottom: 1px solid lightgray;
+        }
+
+            .navbar .side-bar .small-nav .small-nav-item:hover .small-nav-link {
+                color: #f7c33f !important;
+            }
+
+            .navbar .side-bar .small-nav .small-nav-item .small-nav-link {
+                color: #666 !important;
+                text-decoration: none;
+                font-weight: 600;
+                color: black;
+            }  
+
                 header .navbar .container-nav .navbar-wrapper .navbar-right-col {
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
                     padding-left: 2.5rem;
-                    margin:auto;
-                    gap:5px;
+                    margin: auto;
+                    gap: 5px;
                 }
-                    header .navbar .container-nav .navbar-wrapper .navbar-right-col .hamburger{
-                        color:#fff;
-
-                    }
 
                     header .navbar .container-nav .navbar-wrapper .navbar-right-col .flag {
                         display: flex;
@@ -11685,25 +11732,27 @@ header {
             border-bottom-left-radius: 50px;
             background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%);
         }
+
 @media (max-width:992px) {
     header .navbar .container-nav .navbar-wrapper .nav-list {
         display: none;
     }
 
     header .navbar .container-nav .navbar-wrapper .navbar-right-col .navbar-contact-phone {
-        display:none;
+        display: none;
     }
 }
-    footer {
-        display: flex;
-        align-items: center;
-        margin-top: 57px;
-        justify-content: center;
-        padding: 3.2rem 4rem 1.5rem;
-        background-color: #373736;
-        box-shadow: 0rem 0.4rem 1rem rgba(55, 55, 54, 0.2);
-        border-radius: 0.8rem 0.8rem 0 0;
-    }
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 57px;
+    justify-content: center;
+    padding: 3.2rem 4rem 1.5rem;
+    background-color: #373736;
+    box-shadow: 0rem 0.4rem 1rem rgba(55, 55, 54, 0.2);
+    border-radius: 0.8rem 0.8rem 0 0;
+}
 
     footer .container-footer {
         padding: 0;
@@ -11889,14 +11938,14 @@ main {
         max-width: 105rem;
         padding-right: 1rem;
         padding-left: 1rem;
-        width:100%;
+        width: 100%;
     }
 
         #hero .container-hero .card {
             background: #fff;
             border-radius: 0.8rem;
             height: 47rem;
-            background-image: url(/assets/images/flags.png) ;
+            background-image: url(/assets/images/flags.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position-x: center;
@@ -11910,101 +11959,101 @@ main {
             align-items: center;
             border: none;
             background-color: transparent;
-          
         }
-            #hero .container-hero .order-card .order-card-content{
-                width:70%;
+
+            #hero .container-hero .order-card .order-card-content {
+                width: 70%;
             }
 
-            #hero .container-hero .order-card .order-card-content .title {
-                font-weight: bold;
-                font-size: 2.2rem;
-                line-height: 2.7rem;
-                color: #373736;
-            }
-
-
-            #hero .container-hero .order-card .order-card-content .badge {
-                border-radius: 0.6rem;
-                padding: 0.4rem 1rem;
-                font-weight: 800;
-                font-size: 2.6rem;
-                line-height: 4.2rem;
-            }
-
-            #hero .container-hero .order-card .order-card-content .badge-secondary {
-                color: #fff;
-                background-color: #f05835;
-            }
-
-            #hero .container-hero .order-card .order-card-content .order-input {
-                display: flex;
-                margin-bottom: 2rem;
-            }
-
-                #hero .container-hero .order-card .order-card-content .order-input .input-group {
-                    position: relative;
-                    display: flex;
-                    align-items: stretch;
-                    width: 100%;
-                    flex-wrap: nowrap;
+                #hero .container-hero .order-card .order-card-content .title {
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                    line-height: 2.7rem;
+                    color: #373736;
                 }
 
-                    #hero .container-hero .order-card .order-card-content .order-input .input-group input {
-                        height: 100%;
-                        width: 100%;
-                        padding: 1.5rem;
-                        outline: none;
-                    }
 
-                    #hero .container-hero .order-card .order-card-content .order-input .input-group .form-control {
-                        background: rgba(249, 249, 254, 0.8);
-                        border: 0.1rem solid #cecdcd;
-                        border-right-width: 0;
-                        border-top-left-radius: 0.5rem;
-                        border-bottom-left-radius: 0.5rem;
-                    }
+                #hero .container-hero .order-card .order-card-content .badge {
+                    border-radius: 0.6rem;
+                    padding: 0.4rem 1rem;
+                    font-weight: 800;
+                    font-size: 2.6rem;
+                    line-height: 4.2rem;
+                }
 
-                    #hero .container-hero .order-card .order-card-content .order-input .input-group .input-group-append {
+                #hero .container-hero .order-card .order-card-content .badge-secondary {
+                    color: #fff;
+                    background-color: #f05835;
+                }
+
+                #hero .container-hero .order-card .order-card-content .order-input {
+                    display: flex;
+                    margin-bottom: 2rem;
+                }
+
+                    #hero .container-hero .order-card .order-card-content .order-input .input-group {
+                        position: relative;
                         display: flex;
+                        align-items: stretch;
+                        width: 100%;
+                        flex-wrap: nowrap;
                     }
 
-                        #hero .container-hero .order-card .order-card-content .order-input .input-group .input-group-append .input-group-text {
-                            background: rgba(249, 249, 254, 0.8);
-                            border: 0.1rem solid #cecdcd;
-                            border-left-width: 0;
-                            padding: 1.2rem;
-                            border-top-right-radius: 0.5rem;
-                            border-bottom-right-radius: 0.5rem;
+                        #hero .container-hero .order-card .order-card-content .order-input .input-group input {
+                            height: 100%;
+                            width: 100%;
+                            padding: 1.5rem;
+                            outline: none;
                         }
 
-            #hero .container-hero .order-card .order-card-content .btn-plus {
-                cursor: pointer;
-                width: 5rem;
-                min-width: 5rem;
-                height: 5rem;
-                border: 0.1rem solid #00b569;
-                margin-left: 2rem;
-                border-radius: 0.8rem;
-                background-color: #fff;
-            }
+                        #hero .container-hero .order-card .order-card-content .order-input .input-group .form-control {
+                            background: rgba(249, 249, 254, 0.8);
+                            border: 0.1rem solid #cecdcd;
+                            border-right-width: 0;
+                            border-top-left-radius: 0.5rem;
+                            border-bottom-left-radius: 0.5rem;
+                        }
 
-            #hero .container-hero .order-card .order-card-content .btn-order {
-                background: #00b569;
-                border-radius: 0.8rem;
-                height: 5rem;
-                width: 30%;
-                border-color: transparent;
-                font-weight: 600;
-                font-size: 1.6rem;
-                line-height: 2rem;
-            }
+                        #hero .container-hero .order-card .order-card-content .order-input .input-group .input-group-append {
+                            display: flex;
+                        }
 
-                #hero .container-hero .order-card .order-card-content .btn-order:hover {
+                            #hero .container-hero .order-card .order-card-content .order-input .input-group .input-group-append .input-group-text {
+                                background: rgba(249, 249, 254, 0.8);
+                                border: 0.1rem solid #cecdcd;
+                                border-left-width: 0;
+                                padding: 1.2rem;
+                                border-top-right-radius: 0.5rem;
+                                border-bottom-right-radius: 0.5rem;
+                            }
+
+                #hero .container-hero .order-card .order-card-content .btn-plus {
+                    cursor: pointer;
+                    width: 5rem;
+                    min-width: 5rem;
+                    height: 5rem;
                     border: 0.1rem solid #00b569;
-                    color: #00b569;
+                    margin-left: 2rem;
+                    border-radius: 0.8rem;
                     background-color: #fff;
                 }
+
+                #hero .container-hero .order-card .order-card-content .btn-order {
+                    background: #00b569;
+                    border-radius: 0.8rem;
+                    height: 5rem;
+                    width: 30%;
+                    border-color: transparent;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+
+                    #hero .container-hero .order-card .order-card-content .btn-order:hover {
+                        border: 0.1rem solid #00b569;
+                        color: #00b569;
+                        background-color: #fff;
+                    }
 
             #hero .container-hero .order-card::before {
                 content: "";
@@ -12392,110 +12441,110 @@ main {
                 visibility: visible;
             }
 
-                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .tariff-card {
-                        margin-bottom: 20px;
-                    }
+                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .tariff-card {
+                    margin-bottom: 20px;
+                }
 
-                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card {
-                        position: relative;
+                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    background-color: #fff;
+                    background-clip: border-box;
+                    border: 1px solid rgba(0, 0, 0, 0.125);
+                    border-radius: 0.25rem;
+                    background: #fff;
+                    border-radius: 8px;
+                }
+
+                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header {
+                        padding: 24px 20px;
                         display: flex;
-                        flex-direction: column;
-                        min-width: 0;
-                        word-wrap: break-word;
-                        background-color: #fff;
-                        background-clip: border-box;
-                        border: 1px solid rgba(0, 0, 0, 0.125);
-                        border-radius: 0.25rem;
-                        background: #fff;
-                        border-radius: 8px;
+                        align-items: center;
+                        border-bottom: 1px solid #f2f2f2;
                     }
 
-                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header {
-                            padding: 24px 20px;
-                            display: flex;
-                            align-items: center;
-                            border-bottom: 1px solid #f2f2f2;
+                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header img {
+                            width: auto;
+                            margin-right: 24px;
                         }
 
-                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header img {
-                                width: auto;
-                                margin-right: 24px;
-                            }
-
-                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header h3 {
-                                font-weight: bold;
-                                font-size: 18px;
-                                line-height: 22px;
-                                color: #373736;
-                            }
-
-                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav {
-                            display: flex;
-                            flex-wrap: wrap;
-                            padding-left: 0;
-                            margin-bottom: 0;
-                            list-style: none;
+                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header h3 {
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #373736;
                         }
 
-                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs {
-                            padding: 14px 9px 17px;
-                            border-bottom-color: #f2f2f2;
-                            border-bottom: 1px solid #dee2e6;
+                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        list-style: none;
+                    }
+
+                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs {
+                        padding: 14px 9px 17px;
+                        border-bottom-color: #f2f2f2;
+                        border-bottom: 1px solid #dee2e6;
+                    }
+
+                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item {
+                            width: 33%;
                         }
 
-                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item {
-                                width: 33%;
+                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link {
+                                display: inline-block;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 17px;
+                                text-decoration: underline;
+                                color: #494948;
+                                padding: 0;
+                                margin: 13px 8px;
+                                border: none;
                             }
 
-                                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link {
-                                    display: inline-block;
-                                    font-weight: 600;
-                                    font-size: 13px;
-                                    line-height: 17px;
-                                    text-decoration: underline;
-                                    color: #494948;
-                                    padding: 0;
-                                    margin: 13px 8px;
-                                    border: none;
+                                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link.active {
+                                    color: #f05835;
                                 }
 
-                                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link.active {
-                                        color: #f05835;
-                                    }
+                    .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content {
+                        padding: 0 22px 30px;
+                    }
 
-                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content {
-                            padding: 0 22px 30px;
+                        .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li {
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #e4e4e4;
                         }
 
-                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li {
+                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .weight {
                                 display: flex;
-                                justify-content: space-between;
-                                border-bottom: 1px solid #e4e4e4;
+                                border-top: none;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 20px;
+                                color: #353535;
+                                padding: 30px 0 20px;
                             }
 
-                                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .weight {
-                                    display: flex;
-                                    border-top: none;
-                                    font-weight: 500;
-                                    font-size: 17px;
-                                    line-height: 20px;
-                                    color: #353535;
-                                    padding: 30px 0 20px;
-                                }
+                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .price {
+                                border-top: none;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 20px;
+                                color: #353535;
+                                padding: 30px 0 20px;
+                            }
 
-                                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .price {
-                                    border-top: none;
-                                    font-weight: 500;
-                                    font-size: 17px;
-                                    line-height: 20px;
-                                    color: #353535;
-                                    padding: 30px 0 20px;
-                                }
-
-                                .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
-                                    color: #212529;
-                                    background-color: rgba(0, 0, 0, 0.075);
-                                }
+                            .main-container .home .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
+                                color: #212529;
+                                background-color: rgba(0, 0, 0, 0.075);
+                            }
 
     .main-container .home .block .block-body .partner-list {
         margin-bottom: 27px;
@@ -13328,110 +13377,111 @@ main {
                     transition: transform 1.5s ease 0s;
                     visibility: visible;
                 }
-                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .tariff-card {
-                            margin-bottom: 20px;
-                        }
 
-                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card {
-                            position: relative;
+                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .tariff-card {
+                        margin-bottom: 20px;
+                    }
+
+                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 0;
+                        word-wrap: break-word;
+                        background-color: #fff;
+                        background-clip: border-box;
+                        border: 1px solid rgba(0, 0, 0, 0.125);
+                        border-radius: 0.25rem;
+                        background: #fff;
+                        border-radius: 8px;
+                    }
+
+                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header {
+                            padding: 24px 20px;
                             display: flex;
-                            flex-direction: column;
-                            min-width: 0;
-                            word-wrap: break-word;
-                            background-color: #fff;
-                            background-clip: border-box;
-                            border: 1px solid rgba(0, 0, 0, 0.125);
-                            border-radius: 0.25rem;
-                            background: #fff;
-                            border-radius: 8px;
+                            align-items: center;
+                            border-bottom: 1px solid #f2f2f2;
                         }
 
-                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header {
-                                padding: 24px 20px;
-                                display: flex;
-                                align-items: center;
-                                border-bottom: 1px solid #f2f2f2;
+                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header img {
+                                width: auto;
+                                margin-right: 24px;
                             }
 
-                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header img {
-                                    width: auto;
-                                    margin-right: 24px;
-                                }
-
-                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header h3 {
-                                    font-weight: bold;
-                                    font-size: 18px;
-                                    line-height: 22px;
-                                    color: #373736;
-                                }
-
-                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav {
-                                display: flex;
-                                flex-wrap: wrap;
-                                padding-left: 0;
-                                margin-bottom: 0;
-                                list-style: none;
+                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tariff-card-header h3 {
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #373736;
                             }
 
-                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs {
-                                padding: 14px 9px 17px;
-                                border-bottom-color: #f2f2f2;
-                                border-bottom: 1px solid #dee2e6;
+                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 0;
+                            margin-bottom: 0;
+                            list-style: none;
+                        }
+
+                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs {
+                            padding: 14px 9px 17px;
+                            border-bottom-color: #f2f2f2;
+                            border-bottom: 1px solid #dee2e6;
+                        }
+
+                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item {
+                                width: 33%;
                             }
 
-                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item {
-                                    width: 33%;
+                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link {
+                                    display: inline-block;
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                    text-decoration: underline;
+                                    color: #494948;
+                                    padding: 0;
+                                    margin: 13px 8px;
+                                    border: none;
                                 }
 
-                                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link {
-                                        display: inline-block;
-                                        font-weight: 600;
-                                        font-size: 13px;
-                                        line-height: 17px;
-                                        text-decoration: underline;
-                                        color: #494948;
-                                        padding: 0;
-                                        margin: 13px 8px;
-                                        border: none;
+                                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link.active {
+                                        color: #f05835;
                                     }
 
-                                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .nav-tabs .nav-item .nav-link.active {
-                                            color: #f05835;
-                                        }
+                        #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content {
+                            padding: 0 22px 30px;
+                        }
 
-                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content {
-                                padding: 0 22px 30px;
+                            #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li {
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #e4e4e4;
                             }
 
-                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li {
+                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .weight {
                                     display: flex;
-                                    justify-content: space-between;
-                                    border-bottom: 1px solid #e4e4e4;
+                                    border-top: none;
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    line-height: 20px;
+                                    color: #353535;
+                                    padding: 30px 0 20px;
                                 }
 
-                                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .weight {
-                                        display: flex;
-                                        border-top: none;
-                                        font-weight: 500;
-                                        font-size: 17px;
-                                        line-height: 20px;
-                                        color: #353535;
-                                        padding: 30px 0 20px;
-                                    }
+                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .price {
+                                    border-top: none;
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    line-height: 20px;
+                                    color: #353535;
+                                    padding: 30px 0 20px;
+                                }
 
-                                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li .price {
-                                        border-top: none;
-                                        font-weight: 500;
-                                        font-size: 17px;
-                                        line-height: 20px;
-                                        color: #353535;
-                                        padding: 30px 0 20px;
-                                    }
-
-                                    #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
-                                        color: #212529;
-                                        background-color: rgba(0, 0, 0, 0.075);
-                                    }
+                                #main .main-container .block .block-body .currency-div .currency-wrapper .currency-inner .left-side .card .tabs .tab-content ul li:hover {
+                                    color: #212529;
+                                    background-color: rgba(0, 0, 0, 0.075);
+                                }
 
         #main .main-container .privacy .block .block-body .card {
             position: relative;
@@ -13535,8 +13585,9 @@ main {
             margin-bottom: 1.6rem;
             text-decoration: underline;
         }
-          .contact .block .block-body .card .card-contact-wrapper .row .contact-map .address-map{
-         display:none;
+
+        .contact .block .block-body .card .card-contact-wrapper .row .contact-map .address-map {
+            display: none;
         }
 
         .contact .block .block-body .card .card-contact-wrapper .row .contact-title-mail {
@@ -13593,7 +13644,6 @@ main {
 
     #main .main-container #terms .block .block-body .accordion .content-box.active .content {
         height: 620px;
-        
     }
 
 .card-body {
@@ -16268,7 +16318,7 @@ header #userPanel-nav {
                     line-height: 16px;
                     margin-bottom: 10px;
                 }
-               
+
                 #user-panel .row .content .row .tab-content .tab-pane .card .card-header .custom-list-group .list-group-item .order-item-copy {
                     display: flex;
                     align-items: center;
@@ -16330,7 +16380,7 @@ header #userPanel-nav {
                     font-weight: 500;
                     font-size: 13px;
                     line-height: 16px;
-                    color:#f05835;
+                    color: #f05835;
                 }
 
     #user-panel .row .content .row .tab-content .tab-pane .card .card-footer {
@@ -16365,7 +16415,7 @@ header #userPanel-nav {
                     font-size: 13px;
                     line-height: 16px;
                     margin-bottom: 10px;
-                    color:#f05835;
+                    color: #f05835;
                 }
 
                 #user-panel .row .content .row .tab-content .tab-pane .card .card-footer .list-group-horizontal .list-group-item .order-item-value {
@@ -16841,28 +16891,29 @@ header #userPanel-nav {
             color: #373736;
         }
 
-        #user-panel .row .content .tab-content .tab-pane .card .card-body .card-step .form-group .check-custom-block input{
-            display:none;
+        #user-panel .row .content .tab-content .tab-pane .card .card-body .card-step .form-group .check-custom-block input {
+            display: none;
         }
-        #user-panel .row .content .tab-content .tab-pane .card .card-body .table-responsive .table tbody tr td .courier-btns .btn {
-            display: inline-block;
-            font-weight: 400;
-            color: #212529;
-            text-align: center;
-            vertical-align: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background-color: transparent;
-            border: 1px solid transparent;
-            padding: 0.375rem 0.75rem;
-            font-size: 1rem;
-            line-height: 1.5;
-            border-radius: 0.25rem;
-            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            color: #fff;
-        }
+
+#user-panel .row .content .tab-content .tab-pane .card .card-body .table-responsive .table tbody tr td .courier-btns .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #fff;
+}
 
 #user-panel .row .content .tab-content .tab-pane .card .card-body .table-responsive .table tbody tr td .courier-btns .btn-action {
     padding: 4px 10px;
@@ -17064,6 +17115,7 @@ header #userPanel-nav {
                     font-size: 12.5px;
                     line-height: 15px;
                 }
+
         #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-body .increase-balance {
             background: #00b569;
             border-radius: 0.8rem;
@@ -17073,11 +17125,12 @@ header #userPanel-nav {
             font-weight: 600;
             font-size: 16px;
             line-height: 2rem;
-            margin-top:20px;
-            display:flex;
-            align-items:center;
-            justify-content:center;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
         #user-panel .row .content .balance-orange .order-item-balance .card-body .row .balance-card .balance-card-body .balance-card-text {
             font-weight: 500;
             font-size: 11px;
@@ -17184,7 +17237,7 @@ header #userPanel-nav {
 
             .register .block .block-body .card-auth .form-reg .row .row .pass .visiblity-btn .hide-eye {
                 background: url(../../assets/images/opened.svg) center no-repeat;
-                cursor:pointer;
+                cursor: pointer;
             }
 
     .register .block .block-body .card-auth .form-reg .row .row .custom-select {
@@ -17347,7 +17400,7 @@ header #userPanel-nav {
 
                             .login-sec .modal-content .modal-body .modal-site .login .block .block-body .card-auth .row .card-auth-form .input-group .visiblity-btn-password .show-password.hide-eye {
                                 background: url(../../assets/images/opened.svg) center no-repeat;
-                                cursor:pointer;
+                                cursor: pointer;
                             }
 
                 .login-sec .modal-content .modal-body .modal-site .login .block .block-body .card-auth .row .card-auth-form .form-group {
@@ -17656,8 +17709,8 @@ a {
 
 .pagination {
     padding: 30px 0;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
     .pagination ul {
@@ -17672,7 +17725,7 @@ a {
         color: black;
     }
 
-/* ONE */
+    /* ONE */
 
     .pagination a {
         width: 40px;
@@ -17687,6 +17740,3 @@ a {
         border-radius: 100%;
         color: #fff;
     }
-
-
-    
