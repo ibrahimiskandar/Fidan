@@ -1,3 +1,16 @@
+//Hamburger Icon
+
+let hamburger = document.getElementById('hamburger');
+
+hamburger.addEventListener("click",function() {
+    const navList = docuolment.getElementById("nav-list");
+    if (navList.style.display === "block") {
+        navList.style.display = "none";
+    }
+    else {
+        navList.style.display = "block";
+    }
+})
 
 const accordion = document.getElementsByClassName("content-box");
 
@@ -27,10 +40,10 @@ if (userBtn) {
     })
 }
 
-document.addEventListener("mouseup", (e) => {
+/*document.addEventListener("mouseup", (e) => {
     if (e.target.id !== "userPanelBtn" && e.target.id !== "userPanelList")
         dropDownContent.classList.remove("active");
-})
+})*/
 
 
 // User Panel Content Header
@@ -69,10 +82,10 @@ for (let i = 0; i < flagBtn.length; i++) {
 
 // Package Show Button
 
-const showBtn = Array.from(document.querySelectorAll(".package-table button"));
+const showBtn1 = Array.from(document.querySelectorAll(".package-table button"));
 const collapseDiv = Array.from(document.querySelectorAll(".collapse"));
 
-showBtn.forEach(el => {
+showBtn1.forEach(el => {
     el.addEventListener("click", function () {
         let target = this.getAttribute("data-target")
         collapseDiv.forEach(el => {

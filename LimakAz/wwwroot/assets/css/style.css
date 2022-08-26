@@ -11511,9 +11511,14 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
-                    flex: 1;
                     padding-left: 2.5rem;
+                    margin:auto;
+                    gap:5px;
                 }
+                    header .navbar .container-nav .navbar-wrapper .navbar-right-col .hamburger{
+                        color:#fff;
+
+                    }
 
                     header .navbar .container-nav .navbar-wrapper .navbar-right-col .flag {
                         display: flex;
@@ -11680,21 +11685,25 @@ header {
             border-bottom-left-radius: 50px;
             background: linear-gradient(180deg, #fc7b5d 0%, #f05835 100%);
         }
-@media (max-width:992px){
-    header .navbar .container-nav .navbar-wrapper .nav-list{
+@media (max-width:992px) {
+    header .navbar .container-nav .navbar-wrapper .nav-list {
+        display: none;
+    }
+
+    header .navbar .container-nav .navbar-wrapper .navbar-right-col .navbar-contact-phone {
         display:none;
     }
 }
-footer {
-    display: flex;
-    align-items: center;
-    margin-top: 57px;
-    justify-content: center;
-    padding: 3.2rem 4rem 1.5rem;
-    background-color: #373736;
-    box-shadow: 0rem 0.4rem 1rem rgba(55, 55, 54, 0.2);
-    border-radius: 0.8rem 0.8rem 0 0;
-}
+    footer {
+        display: flex;
+        align-items: center;
+        margin-top: 57px;
+        justify-content: center;
+        padding: 3.2rem 4rem 1.5rem;
+        background-color: #373736;
+        box-shadow: 0rem 0.4rem 1rem rgba(55, 55, 54, 0.2);
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
 
     footer .container-footer {
         padding: 0;
