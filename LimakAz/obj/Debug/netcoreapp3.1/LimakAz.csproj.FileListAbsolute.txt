@@ -1559,7 +1559,6 @@ C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Tariff\Index.cshtml.g.cs
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Term\Index.cshtml.g.cs
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Address.cshtml.g.cs
-C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Courier.cshtml.g.cs
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Index.cshtml.g.cs
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Package.cshtml.g.cs
 C:\Users\ASUS\Desktop\end\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
