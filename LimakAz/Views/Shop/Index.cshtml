@@ -107,7 +107,7 @@
                                     @if (pager.CurrentPage > 1)
                                     {
                                         <li>
-                                            <a asp-controller="Shop" asp-action="Index" asp-route-pg="@(pager.CurrentPage - 1)"> dala </a>
+                                            <a asp-controller="Shop" asp-action="Index" asp-route-pg="@(pager.CurrentPage - 1)"> geri </a>
                                         </li>
 }
                                     @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
@@ -121,7 +121,7 @@
                                     @if (pager.CurrentPage < pager.TotalPages)
                                     {
                                         <li>
-                                            <a asp-controller="Shop" asp-action="Index" asp-route-pg="@(pager.CurrentPage + 1)">qabaga</a>
+                                            <a asp-controller="Shop" asp-action="Index" asp-route-pg="@(pager.CurrentPage + 1)">irəli</a>
                                         </li>
 }
                                 </ul>}
