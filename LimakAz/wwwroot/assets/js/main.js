@@ -1,16 +1,3 @@
-//Hamburger Icon
-
-let hamburger = document.getElementById('hamburger');
-
-hamburger.addEventListener("click",function() {
-    const sideBar = document.getElementById("sideBar");
-    if (sideBar.style.display === "block") {
-        sideBar.style.display = "none";
-    }
-    else {
-        sideBar.style.display = "block";
-    }
-})
 
 const accordion = document.getElementsByClassName("content-box");
 
@@ -25,34 +12,14 @@ for (let i = 0; i < accordion.length; i++) {
         removeActivesInAccordion();
         accordion[i].classList.toggle("active");
     })
+
 }
-//function toggleMobileNavigation() {
-//    var sideBar = document.querySelector(".side-bar");
-//    var openBtn = document.querySelector(".navbar .navbar-toggler");
-//    var closeBtn = document.querySelector(".side-bar .close-btn");
-
-//    openBtn.on("click", function () {
-//        if (!sideBar.hasClass("show")) {
-//            sideBar.addClass("show");
-//        }
-//        return false;
-//    })
-
-//    closeBtn.on("click", function () {
-//        if (sideBar.hasClass("show")) {
-//            sideBar.removeClass("show");
-//        }
-//        return false;
-//    })
-//}
-
-//toggleMobileNavigation();
 
 // User Panel Button
 
 const userBtn = document.querySelector(".user-panel-btn");
 const dropDownContent = document.querySelector(".dropdown-menu");
-console.log('userbtn',userBtn)
+console.log('userbtn', userBtn)
 if (userBtn) {
     userBtn.addEventListener("click", (e) => {
         if (e.target.id === "userPanelBtn")
@@ -60,10 +27,10 @@ if (userBtn) {
     })
 }
 
-/*document.addEventListener("mouseup", (e) => {
+document.addEventListener("mouseup", (e) => {
     if (e.target.id !== "userPanelBtn" && e.target.id !== "userPanelList")
         dropDownContent.classList.remove("active");
-})*/
+})
 
 
 // User Panel Content Header
@@ -102,10 +69,10 @@ for (let i = 0; i < flagBtn.length; i++) {
 
 // Package Show Button
 
-const showBtn1 = Array.from(document.querySelectorAll(".package-table button"));
+const showBtn = Array.from(document.querySelectorAll(".package-table button"));
 const collapseDiv = Array.from(document.querySelectorAll(".collapse"));
 
-showBtn1.forEach(el => {
+showBtn.forEach(el => {
     el.addEventListener("click", function () {
         let target = this.getAttribute("data-target")
         collapseDiv.forEach(el => {
@@ -128,7 +95,7 @@ for (let i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener("click", function () {
         let target = this.getAttribute("data-target")
         console.log(target);
-        copyText.forEach(el => {
+        collapseDiv.forEach(el => {
             if (target == el.getAttribute("data-id")) {
                 let text = el.textContent;
                 navigator.clipboard.writeText(text);
@@ -136,6 +103,9 @@ for (let i = 0; i < copyBtn.length; i++) {
         })
     })
 }
+
+
+
 
 
 
@@ -171,7 +141,7 @@ const checkLabelTwo = document.querySelectorAll(".check-custom-block .ccl-2");
 const checkInputTwo = document.querySelectorAll(".check-custom-block .custom-control-input-2");
 
 function removeActivesInInputTwo() {
-    for (let i = 0; i < checkLabelTwo.length; i++) { 
+    for (let i = 0; i < checkLabelTwo.length; i++) {
         checkLabelTwo[i].classList.remove("custom-radio-dot-2");
     }
 }
@@ -188,7 +158,6 @@ for (let i = 0; i < checkLabelTwo.length; i++) {
         })
     })
 }
-
 
 
 
