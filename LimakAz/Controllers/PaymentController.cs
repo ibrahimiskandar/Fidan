@@ -63,8 +63,7 @@ namespace LimakAz.Controllers
                     return RedirectToAction("Error", result);
                 }
             }
-
-            return Content("<script>alert('Hello')</script>");
+            return Ok(true);
         }
 
 
