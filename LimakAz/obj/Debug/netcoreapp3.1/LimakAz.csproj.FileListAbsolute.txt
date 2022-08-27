@@ -2069,3 +2069,4 @@ C:\Users\ASUS\Desktop\son2\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.cs
 C:\Users\ASUS\Desktop\son2\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.dll
 C:\Users\ASUS\Desktop\son2\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.pdb
 C:\Users\ASUS\Desktop\son2\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\son2\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.csproj.AssemblyReference.cache

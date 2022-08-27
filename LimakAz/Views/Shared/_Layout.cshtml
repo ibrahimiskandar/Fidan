@@ -35,7 +35,7 @@
                             <img src="~/assets/images/logo.svg" alt="">
                         </a>
                     </div>
-                    <ul class="nav-list col-xl-4 col-lg-4 col-md-4">
+                    <ul class="nav-list col-md-4">
                         <li class="nav-list-item"><a asp-action="index" asp-controller="tariff">Tariflər</a></li>
                         <li class="nav-list-item"><a asp-action="index" asp-controller="shop">Mağazalar</a></li>
                         <li class="nav-list-item"><a asp-action="index" asp-controller="contact">Əlaqə</a></li>
@@ -43,7 +43,7 @@
                         <li class="nav-list-item"><a asp-action="index" asp-controller="faq">Suallar</a></li>
                     </ul>
 
-                    <div class="topnav">
+                    @*<div class="topnav">
                         <div id="myLinks">
                             <a asp-action="index" asp-controller="tariff">Tariflər</a>
                             <a asp-action="index" asp-controller="shop">Mağazalar</a>
@@ -54,7 +54,7 @@
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
-                    </div>
+                    </div>*@
                     <div class="navbar-right-col col-md-6">
                         <a href="#" class="navbar-contact-phone">
                             <img src="~/assets/images/hot_line.svg" alt="">
@@ -120,9 +120,6 @@
                         {
                             <a asp-action="login" asp-controller="account" class="button">Daxil ol</a>
                         }
-                        <div class="close-btn position-absolute">
-                          
-                        </div>
                     </div>
                 </div>
             </div>
