@@ -1,14 +1,17 @@
-
-const accordion = document.getElementsByClassName("content-box");
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
+//Navbar Hamburger Menu
+const hamburger = document.getElementById("hamburger");
+console.log("hamburger", hamburger);
+const hamburgerList = document.getElementById("hamburger-nav-list");
+document.addEventListener("click", function () {
+    if (hamburgerList.style.display === "none")
+    {
+        hamburgerList.style.display = "block";
     }
-}
-
+    else
+    {
+        hamburgerList.style.display = "none";
+    }
+})
 
 
 
@@ -23,7 +26,6 @@ for (let i = 0; i < accordion.length; i++) {
         removeActivesInAccordion();
         accordion[i].classList.toggle("active");
     })
-
 }
 
 // User Panel Button
