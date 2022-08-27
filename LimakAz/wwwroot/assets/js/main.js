@@ -1,38 +1,38 @@
 //Navbar Hamburger Menu
-const hamburger = document.getElementById("hamburger");
-console.log("hamburger", hamburger);
-const hamburgerList = document.getElementById("hamburger-nav-list");
-hamburger.addEventListener("click", function () {
-    if (hamburgerList.style.display === "none")
-    {
-        hamburgerList.style.display = "block";
-    }
-    else
-    {
-        hamburgerList.style.display = "none";
-    }
-})
+//const hamburger = document.getElementById("hamburger");
+//console.log("hamburger", hamburger);
+//const hamburgerList = document.getElementById("hamburger-nav-list");
+//hamburger.addEventListener("click", function () {
+//    if (hamburgerList.style.display === "none")
+//    {
+//        hamburgerList.style.display = "block";
+//    }
+//    else
+//    {
+//        hamburgerList.style.display = "none";
+//    }
+//})
 
 
 
-function removeActivesInAccordion() {
-    for (let i = 0; i < accordion.length; i++) {
-        accordion[i].classList.remove("active");
-    }
-}
+//function removeActivesInAccordion() {
+//    for (let i = 0; i < accordion.length; i++) {
+//        accordion[i].classList.remove("active");
+//    }
+//}
 
-for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", function () {
-        removeActivesInAccordion();
-        accordion[i].classList.toggle("active");
-    })
-}
+//for (let i = 0; i < accordion.length; i++) {
+//    accordion[i].addEventListener("click", function () {
+//        removeActivesInAccordion();
+//        accordion[i].classList.toggle("active");
+//    })
+//}
 
 // User Panel Button
 
 const userBtn = document.querySelector(".user-panel-btn");
 const dropDownContent = document.querySelector(".dropdown-menu");
-console.log('userbtn', userBtn)
+console.log("userbtn", userBtn);
 if (userBtn) {
     userBtn.addEventListener("click", (e) => {
         if (e.target.id === "userPanelBtn")
@@ -79,7 +79,6 @@ for (let i = 0; i < flagBtn.length; i++) {
     })
 }
 
-
 // Package Show Button
 
 const showBtn = Array.from(document.querySelectorAll(".package-table button"));
@@ -87,11 +86,10 @@ const collapseDiv = Array.from(document.querySelectorAll(".collapse"));
 
 showBtn.forEach(el => {
     el.addEventListener("click", function () {
-        let target = this.getAttribute("data-target")
+        let target = this.getAttribute("data-target");
         collapseDiv.forEach(el => {
             if (target == el.getAttribute("data-id")) {
                 el.classList.toggle("show")
-                console.log("Salam")
             }
         })
     })
