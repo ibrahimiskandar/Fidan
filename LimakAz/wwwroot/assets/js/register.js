@@ -21,7 +21,7 @@ console.log('show2', showBtn2);
 
 
 showBtn1.addEventListener("click", function () {
-    if (showBtn1.previousElementSibling.type == "password") {
+    if (showBtn1.previousElementSibling.previousElementSibling.type == "password") {
         showBtn1.previousElementSibling.previousElementSibling.type = "text";
     } else {
         showBtn1.previousElementSibling.previousElementSibling.type = "password";
