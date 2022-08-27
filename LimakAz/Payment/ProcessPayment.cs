@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Stripe;
 using System.Threading.Tasks;
-using LimakAz.Models;
+using LimakAz.Models.Payment;
+using Stripe;
 
 namespace LimakAz.Payment
 {
@@ -20,7 +20,7 @@ namespace LimakAz.Payment
                     Card = new TokenCardOptions
                     {
                         Number = payModel.CardNumder,
-                        ExpMonth =  payModel.Month.ToString(),
+                        ExpMonth = payModel.Month.ToString(),
                         ExpYear = payModel.Year.ToString(),
                         Cvc = payModel.CVC
                     },

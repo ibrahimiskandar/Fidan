@@ -4,45 +4,38 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LimakAz.Models
+namespace LimakAz.Models.Payment
 {
     public class PayModel
     {
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Cardholder Name")]
         public string CustomerName { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Address")]
         public string Address { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Card Number")]
         public string CardNumder { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Expiration Month")]
         public int Month { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         [Display(Name = "Expiration Year")]
         public int Year { get; set; }
 
-
-        [Required(ErrorMessage = "Please Enter amount")]
+        [Required]
         public string CVC { get; set; }
-        [Range(1, 100)]
-        [Required(ErrorMessage ="Please Enter amount")]
+
+        [Required]
         public int Amount { get; set; }
     }
 }

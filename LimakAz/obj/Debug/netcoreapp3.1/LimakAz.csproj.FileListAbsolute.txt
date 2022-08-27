@@ -1229,7 +1229,6 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\A
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Courier\Edit.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Courier\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Dashboard\Index.cshtml.g.cs
-C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Error\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Faq\Create.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Faq\Edit.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Faq\Index.cshtml.g.cs
@@ -1272,7 +1271,6 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Tariff\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Term\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Address.cshtml.g.cs
-C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Courier.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Index.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\UserPanel\Package.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -1295,7 +1293,6 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Home\PageNotFound.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\ServiceStack.Client.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\Stripe.dll
@@ -1312,7 +1309,6 @@ C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Payment\Page3.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Payment\Privacy.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Payment\Success.cshtml.g.cs
-C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Payment.cshtml.g.cs
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
 C:\Users\Ibrahim\Source\Repos\LimakFinal\LimakAz\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
@@ -1820,3 +1816,6 @@ C:\Users\ASUS\Desktop\son\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.csp
 C:\Users\ASUS\Desktop\son\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.dll
 C:\Users\ASUS\Desktop\son\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.pdb
 C:\Users\ASUS\Desktop\son\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\LimakAz.genruntimeconfig.cache
+C:\Users\Ibrahim\source\repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Ibrahim\source\repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PaymentLayout.cshtml.g.cs
+C:\Users\Ibrahim\source\repos\LimakFinal\LimakAz\obj\Debug\netcoreapp3.1\Razor\Views\Home\PageNotFound.cshtml.g.cs

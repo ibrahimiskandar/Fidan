@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using LimakAz.Models;
+using LimakAz.Models.Payment;
+using LimakAz.Payment;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using LimakAz.Payment;
-using System.Diagnostics;
 
 namespace LimakAz.Controllers
 {
@@ -46,7 +46,7 @@ namespace LimakAz.Controllers
             return View();
         }
 
-        
+
         [Route("pay")]
         public async Task<dynamic> Pay(PayModel payModel)
         {
@@ -63,9 +63,9 @@ namespace LimakAz.Controllers
                     return RedirectToAction("Error", result);
                 }
             }
-            return Ok(true);
-        }
 
+            return RedirectToAction("Index");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error(string error)

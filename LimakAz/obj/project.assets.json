@@ -10238,24 +10238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ibrahim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\son\\LimakFinal\\LimakAz\\LimakAz.csproj",
+      "projectUniqueName": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
       "projectName": "LimakAz",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\son\\LimakFinal\\LimakAz\\LimakAz.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\son\\LimakFinal\\LimakAz\\obj\\",
+      "projectPath": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
+      "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ibrahim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10362,7 +10357,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   },
