@@ -15,18 +15,22 @@
 
 
 
-//function removeActivesInAccordion() {
-//    for (let i = 0; i < accordion.length; i++) {
-//        accordion[i].classList.remove("active");
-//    }
-//}
+const accordion = document.getElementsByClassName("content-box");
 
-//for (let i = 0; i < accordion.length; i++) {
-//    accordion[i].addEventListener("click", function () {
-//        removeActivesInAccordion();
-//        accordion[i].classList.toggle("active");
-//    })
-//}
+function removeActivesInAccordion() {
+    for (let i = 0; i < accordion.length; i++) {
+        accordion[i].classList.remove("active");
+    }
+}
+
+for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+        removeActivesInAccordion();
+        accordion[i].classList.toggle("active");
+    })
+
+}
+
 
 // User Panel Button
 
@@ -98,6 +102,7 @@ showBtn.forEach(el => {
 
 // Copy to Clipboard
 
+
 const copyText = Array.from(document.querySelectorAll("#copyText"));
 const copyBtn = Array.from(document.querySelectorAll(".copy"));
 
@@ -106,7 +111,7 @@ for (let i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener("click", function () {
         let target = this.getAttribute("data-target")
         console.log(target);
-        collapseDiv.forEach(el => {
+        copyText.forEach(el => {
             if (target == el.getAttribute("data-id")) {
                 let text = el.textContent;
                 navigator.clipboard.writeText(text);
@@ -114,6 +119,7 @@ for (let i = 0; i < copyBtn.length; i++) {
         })
     })
 }
+
 
 
 
