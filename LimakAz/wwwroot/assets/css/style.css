@@ -12211,14 +12211,13 @@ main {
                         height: 50px;
                         z-index: 999;
                     }
-
-                        #hero .container-hero .register-card .register-card-main .register-card-padding .register-card-form .register-card-form-input .group .visibility-btn .show {
-                            display: block;
-                            background-image: url("../../assets/images/opened.svg");
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            height: 50px;
-                        }
+                    #hero .container-hero .register-card .register-card-main .register-card-padding .register-card-form .register-card-form-input .group .visibility-btn .show {
+                        display: block;
+                        background-image: url("../../assets/images/opened.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 50px;
+                    }
 
                 #hero .container-hero .register-card .register-card-main .register-card-padding .register-card-form .register-card-form-input .mr {
                     margin-right: 2rem;
@@ -17261,17 +17260,21 @@ header #userPanel-nav {
         .register .block .block-body .card-auth .form-reg .row .row .pass input {
             position: relative;
         }
+            .register .block .block-body .card-auth .form-reg .row .row .pass .pasword-input{
+                position:absolute;
+            }
 
-        .register .block .block-body .card-auth .form-reg .row .row .pass .visiblity-btn {
-            position: absolute;
-            bottom: 0;
-            right: 10px;
-            width: 40px;
-            height: 50px;
-            z-index: 999;
-            color: #373736;
-            outline: 0;
-        }
+            .register .block .block-body .card-auth .form-reg .row .row .pass .visiblity-btn {
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+                width: 40px;
+                height: 50px;
+                z-index: 999;
+                color: #373736;
+                outline: 0;
+                top:25px;
+            }
 
             .register .block .block-body .card-auth .form-reg .row .row .pass .visiblity-btn .show_p {
                 width: 40px;

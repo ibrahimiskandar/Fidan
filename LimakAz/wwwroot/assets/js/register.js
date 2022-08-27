@@ -16,20 +16,22 @@
 
 const showBtn1 = document.querySelector(".showPassword1");
 const showBtn2 = document.querySelector(".showPassword2");
+console.log('show1', showBtn1);
+console.log('show2', showBtn2);
 
 
 showBtn1.addEventListener("click", function () {
     if (showBtn1.previousElementSibling.type == "password") {
-        showBtn1.previousElementSibling.type = "text";
+        showBtn1.previousElementSibling.previousElementSibling.type = "text";
     } else {
-        showBtn1.previousElementSibling.type = "password";
+        showBtn1.previousElementSibling.previousElementSibling.type = "password";
     }
 })
 showBtn2.addEventListener("click", function () {
-    if (showBtn2.previousElementSibling.type == "password") {
-        showBtn2.previousElementSibling.type = "text";
+    if (showBtn2.previousElementSibling.previousElementSibling.type == "password") {
+        showBtn2.previousElementSibling.previousElementSibling.type = "text";
     } else {
-        showBtn2.previousElementSibling.type = "password";
+        showBtn2.previousElementSibling.previousElementSibling.type = "password";
     }
 })
 
