@@ -11735,6 +11735,12 @@ header {
     header .navbar .container-nav .navbar-wrapper .navbar-right-col .hamburger{
         display:block;
     }
+    
+}
+@media (min-width:992px){
+    header .navbar .container-nav .navbar-wrapper .hamburger-nav-list {
+        display: none;
+    }
 }
 
 footer {

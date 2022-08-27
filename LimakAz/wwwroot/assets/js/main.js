@@ -2,7 +2,7 @@
 const hamburger = document.getElementById("hamburger");
 console.log("hamburger", hamburger);
 const hamburgerList = document.getElementById("hamburger-nav-list");
-document.addEventListener("click", function () {
+hamburger.addEventListener("click", function () {
     if (hamburgerList.style.display === "none")
     {
         hamburgerList.style.display = "block";
