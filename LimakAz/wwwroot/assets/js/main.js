@@ -177,6 +177,14 @@ for (let i = 0; i < checkLabelTwo.length; i++) {
 }
 
 
+//Change Password Show/Hide Password
 
-
-
+const eyeBtn = document.getElementById("eyeBtn");
+eyeBtn.addEventListener("click", function () {
+    if (eyeBtn.parentElement.previousElementSibling.type == "password") {
+        eyeBtn.parentElement.previousElementSibling.type = "text";
+    }
+    else {
+        eyeBtn.parentElement.previousElementSibling.type = "password";
+    }
+})
