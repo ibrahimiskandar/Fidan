@@ -11740,6 +11740,7 @@ header {
 @media (min-width:992px){
     header .navbar .container-nav .navbar-wrapper .hamburger-nav-list {
         display: none;
+        visibility:hidden;
     }
 }
 
