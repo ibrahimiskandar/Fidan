@@ -33,7 +33,7 @@ namespace LimakAz.Models.Payment
         public int Year { get; set; }
 
         [Required]
-        public string CVC { get; set; }
+        public string CVC { get; set; } 
 
         public int? Amount { get; set; }
     }
