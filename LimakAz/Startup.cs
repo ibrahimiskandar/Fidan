@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -52,15 +51,6 @@ namespace LimakAz
             //{
             //    options.LoginPath = "/AdminPanel/Account/Login";
             //});
-
-            services.AddDistributedMemoryCache();
-
-        services.AddSession(options =>
-        {
-            options.IdleTimeout = TimeSpan.FromSeconds(10);
-            options.Cookie.HttpOnly = true;
-            options.Cookie.IsEssential = true;
-        });
             services.Configure<AuthMessageSenderOptions>(Configuration);
             services.AddControllersWithViews();
 
@@ -112,8 +102,6 @@ namespace LimakAz
                     await next();
                 }
             });
-
-            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
