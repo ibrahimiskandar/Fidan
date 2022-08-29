@@ -26,6 +26,12 @@
                                         <div class="balance-card-date">
                                             <p>Son əlavə tarixi</p>
                                             <strong>2022-10-07</strong>
+                                            
+                                            <form asp-controller="Payment" asp-action="Index" method="post">
+                                                <input asp-for="Amount"  value="" />
+                                                <button type="submit" class="btn btn-success increase-balance">Balansi Artir </button>
+                                            </form>
+                                            
                                         </div>
                                     </div>
                                     <div class="balance-card-body">
@@ -39,16 +45,13 @@
                                             ARTIRILAN BALANS GERİ
                                             QAYTARILMIR.
                                         </h4>
-                                        <a asp-controller="Payment" asp-action="Index" class="btn btn-success increase-balance" >Balansi Artir </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               
             </div>
         </div>
     </div>
 </div>
-

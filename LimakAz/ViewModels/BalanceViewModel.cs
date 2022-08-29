@@ -12,5 +12,7 @@ namespace LimakAz.ViewModels
         public double Money { get; set; }
         public AppUser Member { get; set; }
         public PayModel payModel { get; set; }
+        public int Amount { get; set; }
+
     }
 }

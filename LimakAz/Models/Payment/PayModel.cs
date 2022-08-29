@@ -35,7 +35,6 @@ namespace LimakAz.Models.Payment
         [Required]
         public string CVC { get; set; }
 
-        [Required]
-        public int Amount { get; set; }
+        public int? Amount { get; set; }
     }
 }
