@@ -1,16 +1,17 @@
 //Navbar Hamburger Menu
-const hamburger = document.getElementById("hamburger");
-const hamburgerlist = document.getElementById("hamburger-nav-list");
-hamburger.addEventListener("click", function () {
-    if (hamburgerlist.style.display === "none")
-    {
-        hamburgerlist.style.display = "block";
-    }
-    else
-    {
-        hamburgerlist.style.display = "none";
-    }
-})
+//const hamburger = document.getElementById("hamburger");
+//console.log("hamburger", hamburger);
+//const hamburgerList = document.getElementById("hamburger-nav-list");
+//hamburger.addEventListener("click", function () {
+//    if (hamburgerList.style.display === "none")
+//    {
+//        hamburgerList.style.display = "block";
+//    }
+//    else
+//    {
+//        hamburgerList.style.display = "none";
+//    }
+//})
 
 
 
@@ -170,14 +171,6 @@ for (let i = 0; i < checkLabelTwo.length; i++) {
 }
 
 
-//Change Password Show/Hide Password
 
-const eyeBtn = document.getElementById("eyeBtn");
-eyeBtn.addEventListener("click", function () {
-    if (eyeBtn.parentElement.previousElementSibling.type == "password") {
-        eyeBtn.parentElement.previousElementSibling.type = "text";
-    }
-    else {
-        eyeBtn.parentElement.previousElementSibling.type = "password";
-    }
-})
+
+
