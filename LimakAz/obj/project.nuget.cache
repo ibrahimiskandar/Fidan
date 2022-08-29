@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zE8MJuCi3AoYiTn4V0bGrfLD3/Y+UbMkKt9iQZebRN2xf9w/m6ywH3noocpb+VEP7/1wp7RcWF/WwZ7WvXyRCA==",
+  "dgSpecHash": "eH/RIcizJYXm+Q8vQQ8T9jdrV7MQdcj9K1Df1vVrZTMH7g7VmV1Kz9tZSW/MDSsHIOumEHicw3aGJBj8LnsW5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ibrahim\\source\\repos\\LimakFinal\\LimakAz\\LimakAz.csproj",
+  "projectFilePath": "C:\\Users\\Ibrahim\\Desktop\\LimakFinal\\LimakAz\\LimakAz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibrahim\\.nuget\\packages\\captchamvc.mvc3\\1.5.0\\captchamvc.mvc3.1.5.0.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\dntcaptcha.core\\4.3.3\\dntcaptcha.core.4.3.3.nupkg.sha512",
